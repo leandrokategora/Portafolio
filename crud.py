@@ -27,7 +27,7 @@ try:
 
 except Exception as e:
     print('Ocurrio un error al conectar al SQL Server: ', e)
-query = """SELECT * FROM Accidentes;"""
+query = """SELECT * FROM Accidente;"""
 
 df_2 = pd.read_sql_query(query, conexion21)
 # df_2.head()

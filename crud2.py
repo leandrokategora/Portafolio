@@ -8,7 +8,7 @@
 # for row in cursor:
 #     print('row = %r' % (row,))
 
-
+import pandas as pd
 import pymssql
 
 try:
@@ -19,6 +19,10 @@ try:
     # print(f"\n\nSERVER VERSION:\n\n{row[0]}")
     # cursor.close()
     # conn.close()
+    df1 = pd.read_sql_query('''SELECT * FROM DArticulosBebidas''', conn)
+    print('Lectura correcta del servidor')
+    for x in df1:
+        print(x)
 except Exception:
     print("\nERROR: Unable to connect to the server.")
     exit(-1)
