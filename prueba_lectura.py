@@ -66,6 +66,7 @@ try:
                                     "DATABASE=DW_Central;"
                                     "UID=sa;"
                                     "PWD=DWpln21")
+    print(params + "\n")
 
     engine12 = sa.create_engine("mssql+pyodbc:///?odbc_connect={}".format(params))
 
@@ -102,7 +103,7 @@ try:
     #     print(x)
     # # df1.head()
 
-    df.to_sql('dFuerzadeVentasPruebas', con = engine12, if_exists = 'append', index= False)
+    # df.to_sql('dFuerzadeVentasPruebas', con = engine12, if_exists = 'append', index= False)
     print("Carga correcta")
 
 
