@@ -1,0 +1,5 @@
+{
+    "python.terminal.activateEnvInCurrentTerminal": false,
+    "java.debug.settings.console": "externalTerminal",
+    "python.defaultInterpreterPath": "C:\\Users\\Usuario\\portafolio\\venv\\Scripts\\python"
+}

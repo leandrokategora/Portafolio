@@ -36,10 +36,10 @@ engine21 = sql.create_engine('mssql+pyodbc://sa:DWpln21@WIN-SERVIDOR-BD\DWGRUPOT
 print("conexion enxitosa")
         
 
-df = pd.read_excel(dir_datos.format('AUXILIARES 2019.xlsx'), sheet_name='AUX VENDEDORES')
-print('Lectura correcta del archivo local')
-for line in df:
-    print(line)
+# df = pd.read_excel(dir_datos.format('AUXILIARES 2019.xlsx'), sheet_name='AUX VENDEDORES')
+# print('Lectura correcta del archivo local')
+# for line in df:
+#     print(line)
 
 
 df1 = pd.read_sql_query('''SELECT * FROM DArticulosBebidas''', engine21)

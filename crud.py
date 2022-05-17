@@ -1,6 +1,7 @@
 # winpty python
 #  python -i
 
+from distutils.log import error
 from matplotlib.pyplot import connect
 import pyodbc
 import pandas as pd
@@ -51,6 +52,7 @@ try:
 #     pwd=password,
 # )
     
+
 
 except Exception as e:
     print('Ocurrio un error al conectar al SQL Server: ', e)
