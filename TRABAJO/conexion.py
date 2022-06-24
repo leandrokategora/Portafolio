@@ -15,5 +15,9 @@ def run():
         print("Conect succesfull")
     except Exception:
         print("Errora in DataBase conection")
+    return engine
     
 
+   
+if __name__=='__main__':
+    run()
