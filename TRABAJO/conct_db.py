@@ -9,15 +9,12 @@ parameters = urllib.parse.quote_plus("DRIVER={SQL Server Native Client 11.0};"
                                      "UID=sa;"
                                      "PWD=DWpln21")
 
-def run():
-    try:
-        engine = sa.create_engine("mssql+pyodbc:///?odbc_connect={}".format(parameters))
-        print("Conect succesfull")
-    except Exception:
-        print("Errora in DataBase conection")
-    return engine
+
+try:
+    enginex = sa.create_engine("mssql+pyodbc:///?odbc_connect={}".format(parameters))
+    print("Conect succesfull")
+except Exception:
+    print("Errora in DataBase conection")
+
     
 
-   
-if __name__=='__main__':
-    run()
