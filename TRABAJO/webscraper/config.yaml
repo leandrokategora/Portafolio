@@ -1,5 +1,5 @@
-news_sites:
-  axum_94:
+news_site:
+  axum_94: #http://www.axum.com.ar/1994srl/controllerView.aspx?cmd=AxDplusDashboards&mode=kpis
     url: http://www.axum.com.ar/1994srl/controllerView.aspx?cmd=AxDplusDashboards&mode=kpis
-  axum_kg:
+  axum_kg: #http://www.axum.com.ar/keraguazu/controllerView.aspx?cmd=AxDplusDashboards&mode=kpis
     url: http://www.axum.com.ar/keraguazu/controllerView.aspx?cmd=AxDplusDashboards&mode=kpis
