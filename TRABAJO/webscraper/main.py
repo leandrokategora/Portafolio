@@ -7,7 +7,7 @@ logger = logging.getLogger(__name__)
 
 
 def _new_scraper(news_site_uid):
-    host = config()['news_site'][news_site_uid]['url']
+    host = config() ['news_site'] [news_site_uid] ['url']
 
     logging.info('Beginning scraper for {}'.format(host))
  
